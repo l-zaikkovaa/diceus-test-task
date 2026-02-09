@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+  --bg: #121621;
+  --card-bg: #1e2233;
+  --btn-bg: #0c0f17;
+  --search-bg: #232838;
+  --bg-lighter: #252a3d;
+
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel2: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.1);
+
+  --text: #f5f7fa;
+  --half-muted: #e5e7eb;
+  --muted: #94a3b8;
+
+  --blue: #3b82f6;
+  --dark-blue: #1e40af;
+  --green: #3bb979;
+  --yellow: #fdd261;
+  --red: #cc0101;
+
+  --r12: 12px;
+  --r16: 16px;
+  --r20: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: var(--half-muted);
+  background: var(--bg);
+  font-weight: 200;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

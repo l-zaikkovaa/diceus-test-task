@@ -1,0 +1,226 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0px 130px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 150px;
+}
+
+.cardWrapper {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r20);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+  padding: 20px 20px;
+
+  min-height: 300px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  color: var(--text);
+
+  margin-bottom: 10px;
+}
+
+.topGrid {
+  display: grid;
+  gap: 14px;
+  align-items: stretch;
+  grid-template-columns: 3.5fr 0.9fr 0.9fr;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+
+  grid-template-areas:
+    "work portfolio quick"
+    "work portfolio market";
+
+  height: clamp(460px, 55vh, 620px);
+}
+
+.workArea,
+.portfolioArea,
+.quickArea,
+.marketArea {
+  min-width: 0;
+  min-height: 0;
+}
+.workArea > *,
+.portfolioArea > *,
+.quickArea,
+.marketArea {
+  width: 100%;
+  height: 100%;
+}
+
+.workArea {
+  grid-area: work;
+  display: flex;
+  min-width: 0;
+}
+
+.portfolioArea {
+  grid-area: portfolio;
+  min-width: 0;
+}
+
+.goalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.quickArea {
+  grid-area: quick;
+  min-width: 0;
+}
+
+.quickActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 10px;
+  padding: 12px 0;
+}
+
+.actionBtn {
+  padding: 10px 5px;
+  background-color: var(--blue);
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.marketArea {
+  grid-area: market;
+  min-width: 0;
+}
+
+.bodyCard {
+  padding: 0;
+}
+
+.marketList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  margin-top: 15px;
+}
+
+.marketItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  line-height: 1.35;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--half-muted);
+  padding: 7px 20px 5px 5px;
+}
+
+.marketText {
+  flex: 1;
+  min-width: 0;
+  color: var(--half-muted);
+}
+
+@media (max-width: 1600px) {
+  .page {
+    padding: 0 80px;
+  }
+
+  .topGrid {
+    height: clamp(520px, 60vh, 720px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .page {
+    padding: 0 40px;
+  }
+
+  .main {
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+
+  .topGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "work"
+      "portfolio"
+      "quick"
+      "market";
+    gap: 14px;
+
+    height: auto;
+  }
+
+  .workArea {
+    grid-area: work;
+  }
+  .portfolioArea {
+    grid-area: portfolio;
+  }
+  .quickArea {
+    grid-area: quick;
+  }
+  .marketArea {
+    grid-area: market;
+  }
+
+  .cardWrapper {
+    padding: 16px;
+    border-radius: 16px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .page {
+    padding: 0 14px;
+  }
+
+  .cardWrapper {
+    padding: 14px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .goalsList {
+    gap: 14px;
+  }
+
+  .quickActions {
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .actionBtn {
+    font-size: 14px;
+    border-radius: 16px;
+  }
+
+  .marketText {
+    font-size: 14px;
+  }
+}

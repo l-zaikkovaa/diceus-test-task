@@ -1,0 +1,31 @@
+.btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  border: 1px solid #fff;
+  color: #fff;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 120ms ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn[data-variant="ghost"] {
+  background: transparent;
+}

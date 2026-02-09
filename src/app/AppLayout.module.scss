@@ -1,0 +1,173 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+
+  padding: 14px 130px;
+}
+
+.greeting {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--half-muted);
+  b {
+    font-weight: 800;
+  }
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  width: min(340, 24vw);
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text);
+  outline: none;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-weight: 400;
+
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  background: radial-gradient(circle, rgba(30, 64, 175, 1) 0%, rgba(30, 64, 175, 0.3) 100%);
+  color: var(--text);
+}
+
+.nav {
+  padding: 20px 130px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow: auto;
+  align-items: center;
+}
+
+.navPill {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #0c0f17;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  font-size: 16px;
+
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.active {
+  background: var(--blue);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navMore {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #0c0f17;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+@media (max-width: 1024px) {
+  .topbar {
+    padding: 14px 40px;
+  }
+
+  .nav {
+    padding: 16px 40px;
+  }
+
+  .greeting {
+    font-size: 18px;
+  }
+
+  .search {
+    width: min(320px, 40vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    padding: 12px 24px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .greeting {
+    flex: 1 1 100%;
+    font-size: 14px;
+    line-height: 1.25;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .topbarRight {
+    flex: 1 1 100%;
+    gap: 10px;
+  }
+
+  .search {
+    width: 50%;
+    padding: 9px 12px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .nav {
+    padding: 12px 14px;
+    gap: 8px;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navPill {
+    padding: 8px 10px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .navMore {
+    width: 32px;
+    height: 32px;
+  }
+}

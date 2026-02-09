@@ -1,0 +1,45 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.barTrack {
+  height: 16px;
+  border-radius: 0 999px 999px 0;
+  overflow: hidden;
+  background: #313853;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 0 999px 999px 0;
+  background: linear-gradient(90deg, #313a59 0%, var(--blue) 100%);
+  transition: width 240ms ease;
+}
+
+.text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 200;
+}
+
+.val {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 300;
+}

@@ -1,0 +1,90 @@
+.shell {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r20);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
+
+  padding: 20px 20px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.tabBtn {
+  background: var(--btn-bg);
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 999px;
+
+  font-size: 14px;
+}
+
+.activeBtn {
+  background-color: var(--blue);
+}
+
+.originator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarSmall {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  background: radial-gradient(circle, rgba(30, 64, 175, 1) 0%, rgba(30, 64, 175, 0.3) 100%);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.twoLine {
+  min-width: 0;
+}
+
+.cellTitle {
+  font-weight: 300;
+  color: var(--half-muted);
+}
+
+.cellSub {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--muted);
+}
+
+.type {
+  color: var(--half-muted);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.statusWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.cellRight {
+  display: flex;
+  justify-content: flex-end;
+}

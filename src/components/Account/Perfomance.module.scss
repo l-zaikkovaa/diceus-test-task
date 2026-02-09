@@ -1,0 +1,72 @@
+.perfomanceWrapper {
+  display: flex;
+  gap: 12px;
+  margin: 0 0;
+  align-items: flex-start;
+
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.cardFixed {
+  flex: 0 0 370px;
+  min-height: 220px;
+}
+
+.exposureCard {
+  flex: 1 0 460px;
+
+  max-width: 550px;
+}
+
+.big {
+  font-size: 46px;
+  font-weight: 200;
+  letter-spacing: -0.04em;
+}
+
+.subhint,
+.hint {
+  padding-bottom: 10px;
+  font-size: 20px;
+  opacity: 0.65;
+}
+
+.stat {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 980px) {
+  .perfomanceWrapper {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .cardFixed {
+    flex: 1 1 100%;
+    min-height: auto;
+  }
+
+  .exposureCard {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .big {
+    font-size: 34px;
+    letter-spacing: -0.03em;
+  }
+
+  .hint,
+  .subhint {
+    font-size: 14px;
+    padding-bottom: 6px;
+  }
+
+  .stat {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+}

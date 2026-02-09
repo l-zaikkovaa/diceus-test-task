@@ -1,0 +1,27 @@
+.pill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border: none;
+  background-color: #252a3d;
+  border-radius: 16px;
+
+  padding: 20px 20px;
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.subtitle,
+.date {
+  color: var(--muted);
+}

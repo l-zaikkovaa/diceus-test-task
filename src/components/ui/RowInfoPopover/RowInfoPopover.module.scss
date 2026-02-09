@@ -1,0 +1,27 @@
+.popover {
+  position: fixed;
+  z-index: 9999;
+
+  width: 280px;
+  padding: 10px 12px;
+
+  border-radius: 12px;
+  background: #fff;
+  color: #000;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 6px;
+}
+
+.body {
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.85);
+}

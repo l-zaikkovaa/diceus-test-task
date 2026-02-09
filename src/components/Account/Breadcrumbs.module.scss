@@ -1,0 +1,33 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  opacity: 0.9;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
+
+.current {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+@media (max-width: 1920px) {
+  .wrap {
+    margin-bottom: 20px;
+  }
+}

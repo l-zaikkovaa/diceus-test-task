@@ -1,0 +1,54 @@
+.scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: max-content;
+  min-width: 100%;
+}
+
+.header .row {
+  background: #252a3d;
+}
+
+.body .row:nth-child(even) {
+  background: #232838;
+}
+
+.row {
+  display: grid;
+  align-items: center;
+  column-gap: 24px;
+  padding: 0 20px;
+}
+
+.cell {
+  min-width: 0;
+  padding: 18px 0;
+}
+
+.headCell {
+  padding: 12px 0;
+  white-space: nowrap;
+  opacity: 0.8;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.body .row {
+  border-top: 1px solid var(--line);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

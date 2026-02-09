@@ -1,0 +1,33 @@
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+
+  width: var(--chip-size);
+  height: var(--chip-size);
+}
+
+.xs {
+  --chip-size: 6px;
+}
+.sm {
+  --chip-size: 8px;
+}
+.md {
+  --chip-size: 10px;
+}
+.lg {
+  --chip-size: 16px;
+}
+
+.blue {
+  background: var(--blue);
+}
+.green {
+  background: var(--green);
+}
+.yellow {
+  background: var(--yellow);
+}
+.red {
+  background: #b93b3b;
+}

@@ -1,0 +1,384 @@
+.wrap {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topCards {
+  display: flex;
+  gap: 12px;
+  margin: 0 0;
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+}
+
+.cardFixed {
+  flex: 0 0 340px;
+  min-height: 155px;
+
+  background: var(--bg-lighter);
+  border: none;
+}
+
+.positionCard {
+  flex: 1 0 460px;
+  background: var(--bg-lighter);
+  border: none;
+}
+
+.positionBars > div > div:nth-child(2) > div:nth-child(2) {
+  color: var(--muted);
+  font-weight: 200;
+}
+.positionBars > div > div:nth-child(3) > div:nth-child(2) {
+  color: var(--muted);
+  font-weight: 200;
+}
+
+.positionBars > div > div {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  column-gap: 22px;
+}
+
+.overallRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.overallValue {
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.overallPill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.dot[data-on="true"] {
+  background: var(--blue);
+}
+
+.trendSvg {
+  padding-left: 10px;
+  height: 52px;
+}
+
+.trendLine {
+  stroke: var(--blue);
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 6px 16px rgba(72, 149, 255, 0.18));
+}
+
+.trendLabels {
+  display: flex;
+  justify-content: left;
+  gap: 25px;
+}
+
+.trendLabel {
+  font-size: 16px;
+  opacity: 0.55;
+}
+
+.cardWrapper {
+  background: var(--bg-lighter);
+  border-radius: var(--r20);
+  overflow: hidden;
+
+  padding: 25px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.cardTitle {
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.midCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.factors {
+  display: grid;
+  gap: 14px;
+}
+
+.factorRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.factorNum {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  background: transparent;
+}
+
+.factorRow[data-tone="green"] .factorNum {
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.factorRow[data-tone="yellow"] .factorNum {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+
+.factorMid {
+  flex: 1;
+  min-width: 0;
+}
+
+.factorLabel {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.factorBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.factorFill {
+  height: 16px;
+  border-radius: 0 999px 999px 0;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.factorRow[data-tone="green"] .factorFill {
+  background: linear-gradient(90deg, rgba(90, 214, 143, 0.25), var(--green));
+}
+.factorRow[data-tone="yellow"] .factorFill {
+  background: linear-gradient(90deg, rgba(255, 209, 92, 0.25), var(--yellow));
+}
+
+.factorDelta {
+  font-size: 14px;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.aicardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 24px;
+}
+
+.aicardTitle {
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.recoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+
+  margin-bottom: 15px;
+}
+
+.recoText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recoTitle {
+  font-weight: 400;
+}
+
+.recoDesc {
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.recoBtn {
+  border: none;
+  background-color: var(--green);
+  border-radius: 999px;
+  padding: 10px 40px;
+  color: black;
+  font-size: 14px;
+}
+
+@media (max-width: 1280px) {
+  .topCards {
+    flex-wrap: wrap;
+  }
+
+  .cardFixed {
+    flex: 1 1 320px;
+  }
+
+  .positionCard {
+    flex: 1 1 420px;
+  }
+}
+
+@media (max-width: 1560px) {
+  .recoItem {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .recoDesc {
+    font-size: 13px;
+  }
+
+  .recoBtn {
+    width: 30%;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    gap: 12px;
+  }
+
+  .topCards {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cardFixed,
+  .positionCard {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .overallValue {
+    font-size: 34px;
+  }
+
+  .overallPill {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .trendLabels {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .trendLabel {
+    font-size: 12px;
+  }
+
+  .positionBars > div > div {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .midCards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .cardWrapper {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .cardHeader {
+    margin-bottom: 16px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .factorRow {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .factorNum {
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .factorLabel {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .factorBar {
+    gap: 8px;
+  }
+
+  .factorFill {
+    height: 12px;
+  }
+
+  .factorDelta {
+    font-size: 12px;
+  }
+
+  .recoBtn {
+    width: 100%;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .topCards {
+    flex-direction: row;
+    gap: 12px;
+  }
+}

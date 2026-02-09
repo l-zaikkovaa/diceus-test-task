@@ -1,0 +1,157 @@
+.shell {
+  padding: 10px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 35px;
+}
+
+.searchLabel {
+  min-width: 240px;
+}
+
+.search {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  height: 28px;
+  width: 100%;
+
+  padding: 10px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 300;
+  }
+}
+
+.toolbarBtn {
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 14px;
+  height: 28px;
+
+  padding: 4px 20px;
+
+  &:hover {
+    background: rgba(63, 125, 255, 0.18);
+    border-color: rgba(63, 125, 255, 0.75);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.communicationPills {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+  padding: 0 10px;
+}
+
+.colLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.colRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.cardLeft,
+.cardRight {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--bg-lighter);
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.cardNew {
+  border: 1px solid var(--blue);
+}
+
+.topRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: var(--dark-blue);
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.topTitle {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.date {
+  font-size: 14px;
+  color: var(--muted);
+
+  margin-bottom: 7px;
+}
+
+.content {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.attachmentsBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 3px 20px;
+  background-color: color-mix(in srgb, var(--green) 40%, transparent);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  margin-bottom: 8px;
+}
+
+.replyBtn {
+  background: var(--blue);
+  border: none;
+  padding: 7px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 999px;
+}
+
+@media (max-width: 980px) {
+  .communicationPills {
+    flex-direction: column;
+  }
+
+  .colLeft,
+  .colRight {
+    flex: none;
+  }
+}
