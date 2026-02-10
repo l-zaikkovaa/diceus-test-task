@@ -40,6 +40,16 @@ All logic is implemented on the frontend level with mocked domain data.
 - Component-based architecture
 - Custom UI components (no heavy UI frameworks)
 
+## AI Tools Usage
+AI tools (GPT) were used selectively to:
+- Discuss architectural decisions and component boundaries
+- Refine TypeScript typings and improve type safety
+- Review and simplify complex React logic
+- Improve code readability and naming
+
+All core logic, structure, and implementation decisions were made manually.
+AI was used as a supporting tool, not as a code generator.
+
 ## ------------ Architectural Decisions
 ## Component Design
 - Reusable UI components (Card, Table, Chip, Stepper)
