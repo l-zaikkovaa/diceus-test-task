@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Insurance Dashboard & Account Page — Frontend Test Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a fully implemented frontend dashboard. The goal was to simulate real account management workflows while keeping the codebase clean and scalable.
 
-Currently, two official plugins are available:
+The project demonstrates my ability to:
+- Work with complex UI designs
+- Build structured, readable React applications
+- Translate business requirements into a clear user interface
+- Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Functional Scope
 
-## React Compiler
+- Work Queue with status-based filtering
+- Portfolio goals & KPI tracking
+- Accounts table with typed columns
+- Policy lifecycle visualization
+- Decision support & winnability analysis
+- Communication panel (email-like UI)
+All logic is implemented on the frontend level with mocked domain data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React 18
+- TypeScript
+- Vite
+- SCSS Modules
+- Modern CSS (Flexbox / Grid)
+- Component-based architecture
+- Custom UI components (no heavy UI frameworks)
 
-## Expanding the ESLint configuration
+## ------------ Architectural Decisions
+## Component Design
+- Reusable UI components (Card, Table, Chip, Stepper)
+- Feature-based composition for dashboard blocks
+- Clear separation between: UI components, Domain models, Mocked data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Typing Strategy
+Strong TypeScript typing for:
+- Tables and columns
+- Domain entities (accounts, policies, statuses)
+- Avoided usage of any
+- Explicit union types for statuses, tones, and UI states
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## Styling
+- SCSS Modules for locally scoped styles
+- Layout built using Flexbox and CSS Grid
+- Desktop-first approach with adaptive behavior
+- No external UI libraries to maintain full control over structure and styling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## Purpose of the Project
+This project was created as a technical test assignment to demonstrate:
+- Ability to translate a complex Figma design into a working product
+- Strong understanding of React + TypeScript
+- Attention to UX details and business logic
+- Clean, maintainable frontend architecture
+- Real-world dashboard patterns (tables, metrics, workflows)
