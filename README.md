@@ -56,7 +56,7 @@ Strong TypeScript typing for:
 ## Styling
 - SCSS Modules for locally scoped styles
 - Layout built using Flexbox and CSS Grid
-- Desktop-first approach with adaptive behavior
+- Desktop-first approach aligned with a 1920px design, with adaptive behavior
 - No external UI libraries to maintain full control over structure and styling
 
 ## Purpose of the Project
