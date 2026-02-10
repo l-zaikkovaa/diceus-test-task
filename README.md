@@ -6,7 +6,20 @@ The project demonstrates my ability to:
 - Work with complex UI designs
 - Build structured, readable React applications
 - Translate business requirements into a clear user interface
-- Currently, two official plugins are available:
+
+## Live Demo
+The application is deployed and publicly available via Azure Static Web Apps:
+
+👉 Live demo:
+https://polite-mushroom-087f01d03.6.azurestaticapps.net
+
+Deployment & CI/CD
+- Hosted on Azure Static Web Apps
+- Continuous deployment configured via GitHub Actions
+- Automatic rebuild and redeploy on every push to the main branch
+- Production build generated using Vite
+
+! Note: The application uses mocked data and does not require authentication.
 
 ## Functional Scope
 
@@ -19,7 +32,7 @@ The project demonstrates my ability to:
 All logic is implemented on the frontend level with mocked domain data.
 
 ## Tech Stack
-- React 18
+- React 19
 - TypeScript
 - Vite
 - SCSS Modules
