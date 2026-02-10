@@ -44,8 +44,6 @@
   grid-template-areas:
     "work portfolio quick"
     "work portfolio market";
-
-  height: clamp(460px, 55vh, 620px);
 }
 
 .workArea,
@@ -88,7 +86,6 @@
 .quickActions {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
 
   margin-top: 10px;
@@ -183,6 +180,10 @@
   }
   .marketArea {
     grid-area: market;
+  }
+
+  .quickActions {
+    align-items: center;
   }
 
   .cardWrapper {
