@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useId, useCallback } from "react";
+import { useState, useMemo, useId, useCallback } from "react";
 
 import { RowInfoPopover } from "../ui/RowInfoPopover/RowInfoPopover";
 import { Table } from "../ui/Table/Table";
